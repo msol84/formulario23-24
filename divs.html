@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position DIV</title>
+    <style>
+        .amarillo{
+            background-color: yellow;
+            width: 200px;
+            height: 200px;
+            position: fixed;
+            top:100px;
+            left:100px;
+            opacity: 80%;
+        }
+        .bolita{
+            background-color: red;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            position: absolute;
+            top:50%;
+            left: 50%;
+
+        }
+        .azul{
+            background-color: blue;
+            width: 200px;
+            height: 200px ;
+            position: relative;
+            bottom: 0px;
+            right: 0px;
+            padding: 20px green solid;
+            border: 2px black solid;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <p>Tipos de posicionamiento
+        Un elemento posicionado es un elemento cuyo valor computado de positiones relative, absolute, fixed, o sticky. (En otras palabras, cualquiera excepto static).
+        Un elemento posicionado relativamente es un elemento cuyo valor computado de positiones relative. Las propiedades topy bottomespecifican el desplazamiento vertical desde su posición original; las propiedades lefty rightespecifican su desplazamiento horizontal.
+        Un elemento posicionado absolutamente es un elemento cuyo valor computado de positiones absoluteo fixed. Las propiedades top, right, bottom, y leftespecifican el desplazamiento desde los bordes del bloque contenedor (en-US)del elemento. (El bloque contenedor es el ancestro relativo al cual el elemento está posicionado). Si el elemento tiene márgenes, se agregará al desplazamiento. el elemento establece un nuevo contexto de formato de bloque para su contenido
+        Un elemento posicionado fijamente es un elemento cuyo valor de positioncomputado es sticky. Es tratado como un elemento posicionado relativamente hasta que su bloque contenedor (en-US)cruza un límite establecido (como por ejemplo dando a topcualquier valor distinto de auto), dentro de su flujo principal (o el contenedor dentro del cual se mueve), desde el cual es tratado como "fijo" hasta que alcance el borde opuesto de su bloque contenedor (en-US).
+        La mayoría de las veces, los elementos absolutamente posicionados que tienen su heighty widthestablecidos en autoson ajustados hasta acomodarse a su contenido. Sin embargo, los elementos no reemplazados y absolutamente posicionados se pueden crear para llenar el espacio vertical disponible, especificando tanto topcomo bottom, y dejando heightsin especificar (es decir, auto). De igual manera se pueden utilizar para llenar el espacio horizontal disponible especificando tanto leftcomo right, y dando a widthel valor de auto.
+        
+        A excepción del caso anteriormente descrito (de elementos posicionados absolutamente rellenando el espacio disponible):
+        
+        Si ambos, topy bottomestán especificados (técnicamente, no auto), topgana.
+        Si ambos, lefty right, están especificados, leftgana cuando es ltr(Inglés, japonés horizontal, etc.) y rightgana cuando directiones rtl(Persa, árabe, hebreo, etc.).</p>
+    <div class="amarillo">
+     
+    </div>
+    <div class="azul">
+        <div class="bolita"></div>
+    </div>
+    
+</body>
+</html>
